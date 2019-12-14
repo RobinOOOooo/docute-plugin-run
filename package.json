@@ -1,0 +1,21 @@
+{
+  "name": "docute-plugin-run",
+  "description": "docute 在线运行 Vue 单文件",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "keywords": [
+    "docute",
+    "docute vue",
+    "docute editor",
+    "docute demo",
+    "vue-run-sfc",
+    "docute-sfc",
+    "docute-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dream2023/docute-plugin-run"
+  },
+  "homepage": "https://github.com/dream2023/docute-plugin-run/"
+}

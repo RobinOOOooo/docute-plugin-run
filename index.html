@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>docute-plugin-run</title>
+    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
+    <style>
+      .page-content h2 {
+        margin-top: 2.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="docute"></div>
+    <script src="./src/index.js"></script>
+    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+    <script src="https://unpkg.com/vue-run-sfc"></script>
+    <script>
+      new Docute({
+        plugins: [docutePluginRun({ reverse: true })],
+        nav: [
+          {
+            title: '指南',
+            link: '/docs.md'
+          },
+          {
+            title: 'Github',
+            link: 'https://github.com/dream2023/docute-plugin-run'
+          }
+        ],
+        routes: {
+          '/': {
+            file: '/docs.md'
+          }
+        },
+        sidebar: [
+          {
+            title: '指南',
+            toc: true,
+            link: '/docs.md',
+            collapsable: true
+          }
+        ]
+      })
+    </script>
+  </body>
+</html>
