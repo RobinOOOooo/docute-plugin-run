@@ -21,10 +21,11 @@
     <script src="https://unpkg.com/vue-run-sfc"></script>
     <script>
       new Docute({
+        title: 'docute-plugin-run',
         plugins: [docutePluginRun({ reverse: true })],
         nav: [
           {
-            title: '指南',
+            title: '🥚指南',
             link: '/docs.md'
           },
           {
@@ -34,12 +35,13 @@
         ],
         routes: {
           '/': {
+            title: '🥚指南',
             file: '/docs.md'
           }
         },
         sidebar: [
           {
-            title: '指南',
+            title: '🥚指南',
             toc: true,
             link: '/docs.md',
             collapsable: true
