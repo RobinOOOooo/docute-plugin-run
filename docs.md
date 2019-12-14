@@ -49,10 +49,14 @@
 ## 🍎 使用
 
 ```html
-<!-- 先引入 vue-run-sfc -->
-<script src="//unpkg.com/vue-run-sfc"></script>
+<!-- 注意注册顺序 -->
+<!-- 先引入 docute-plugin-run -->
+<script src="https://unpkg.com/docute-plugin-run"></script>
 <!-- 再引入 docute.js -->
 <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+<!-- 再引入 vue-run-sfc -->
+<script src="https://unpkg.com/vue-run-sfc"></script>
+
 <!-- 再进行注册-->
 <script>
   new Docute({
